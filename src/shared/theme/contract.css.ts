@@ -14,6 +14,7 @@ export const vars = createGlobalThemeContract({
   },
   spacing: {
     none: "none",
+    nano: "nano",
     small: "small",
     medium: "medium",
     large: "large",

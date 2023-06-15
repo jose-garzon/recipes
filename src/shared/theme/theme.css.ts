@@ -15,6 +15,7 @@ createGlobalTheme(":root", vars, {
   },
   spacing: {
     none: "0px",
+    nano: "6px",
     small: "8px",
     medium: "16px",
     large: "24px",

@@ -1,19 +1,20 @@
 import { HTMLProps } from "react";
-import { Icon } from "../Icon";
+import { Icon, IconProps } from "../Icon";
+import { container, input } from "./styles.css";
 
 interface InputProps extends HTMLProps<HTMLInputElement> {
   label: string;
-  // initialIcon?:
+  initialIconType?: IconProps["type"];
 }
 
 export function Input(props: InputProps): JSX.Element {
-  const { label, id, ...rest } = props;
+  const { label, id, initialIconType, ...rest } = props;
   return (
-    <label htmlFor={id} className="flex flex-col">
+    <label htmlFor={id}>
       <span>{label}</span>
-      <div className="flex items-center p-8 bg-slate-950">
-        <Icon type="search" />
-        <input id={id} {...rest} />
+      <div className={container}>
+        {initialIconType && <Icon type="search" />}
+        <input id={id} className={input} {...rest} />
       </div>
     </label>
   );

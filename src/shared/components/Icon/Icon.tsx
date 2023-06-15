@@ -1,7 +1,7 @@
 import { TbSearch } from "react-icons/tb";
 import { IconBaseProps } from "react-icons";
 
-interface IconProps extends IconBaseProps {
+export interface IconProps extends IconBaseProps {
   type: keyof typeof icons;
 }
 
