@@ -1,4 +1,4 @@
-import { TbSearch } from "react-icons/tb";
+import { TbSearch, TbHome } from "react-icons/tb";
 import { IconBaseProps } from "react-icons";
 
 export interface IconProps extends IconBaseProps {
@@ -7,6 +7,7 @@ export interface IconProps extends IconBaseProps {
 
 const icons = {
   search: TbSearch,
+  home: TbHome,
 };
 
 export function Icon(props: IconProps): JSX.Element {

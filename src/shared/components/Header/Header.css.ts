@@ -11,4 +11,5 @@ export const navItem = style({
   flexGrow: "2",
   textAlign: "center",
   padding: vars.spacing.medium,
+  cursor: "pointer",
 });
