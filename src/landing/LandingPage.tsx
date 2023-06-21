@@ -1,5 +1,6 @@
 import { Input } from "../shared/components";
-import { title } from "./LandingPage.css";
+import { Category } from "../shared/components";
+import { categoriesSection, title } from "./LandingPage.css";
 
 export function LandingPage() {
   return (
@@ -7,6 +8,11 @@ export function LandingPage() {
       <h1 className={title}>Encuentra las mejores recetas</h1>
       <Input id="search-recipes" label="Busqueda" initialIconType="search" />
       <h3>Categorias</h3>
+      <section className={categoriesSection}>
+        <Category label="Desayuno" />
+        <Category label="Almuerzo" />
+        <Category label="Cena" />
+      </section>
       <h3>Recomendados</h3>
       <h3>Recetas</h3>
     </>
