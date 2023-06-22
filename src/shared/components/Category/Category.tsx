@@ -1,12 +1,15 @@
+import { category, categoryImage } from "./Category.css";
+
 interface CategoryProps {
   label: string;
+  image: string;
 }
 
 export function Category(props: CategoryProps) {
-  const { label } = props;
+  const { label, image } = props;
   return (
-    <div>
-      <img src="" alt="" />
+    <div className={category}>
+      <img className={categoryImage} src={image} alt={label} />
       <span>{label}</span>
     </div>
   );

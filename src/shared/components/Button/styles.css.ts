@@ -6,7 +6,7 @@ const base = style({
   borderRadius: "30px",
   border: "none",
   cursor: "pointer",
-  transition: "0.2s",
+  transition: "300ms",
   ":active": {
     scale: "0.95",
     filter: "brightness(85%) hue-rotate(-20deg)",
