@@ -1,4 +1,4 @@
-import { category, categoryImage } from "./Category.css";
+import { category, categoryImage, categoryName } from "./Category.css";
 
 interface CategoryProps {
   label: string;
@@ -10,7 +10,7 @@ export function Category(props: CategoryProps) {
   return (
     <div className={category}>
       <img className={categoryImage} src={image} alt={label} />
-      <span>{label}</span>
+      <span className={categoryName}>{label}</span>
     </div>
   );
 }
