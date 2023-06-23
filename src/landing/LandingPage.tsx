@@ -8,6 +8,7 @@ import {
 } from "./LandingPage.css";
 import breakfastImage from "../assets/breakfast.jpg";
 import { RecommendedCard } from "../shared/components/Recommended";
+import { RecipeCard } from "../shared/components/Recipe";
 
 export function LandingPage() {
   return (
@@ -32,7 +33,14 @@ export function LandingPage() {
       </section>
       <section className={landingSection}>
         <h3>Recetas</h3>
-        <div></div>
+        <div className={recommendedSection}>
+          <RecipeCard
+            image={breakfastImage}
+            name="Pollo frito"
+            perparationTime="30 mins"
+            servings="4"
+          />
+        </div>
       </section>
     </>
   );
