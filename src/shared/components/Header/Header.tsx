@@ -16,9 +16,6 @@ export function Header() {
           <Link className={navItem} to="/cart">
             Carrito de compras
           </Link>
-          <Link className={navItem} to="/favorites">
-            Favoritos
-          </Link>
         </ul>
       </nav>
     </header>
