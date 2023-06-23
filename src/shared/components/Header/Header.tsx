@@ -10,10 +10,10 @@ export function Header() {
           <Link className={navItem} to="/">
             <Icon type="home" size={20} />
           </Link>
-          <Link className={navItem} to="/calendar">
+          <Link className={navItem} to="/calendario">
             Calendario
           </Link>
-          <Link className={navItem} to="/cart">
+          <Link className={navItem} to="/carrito">
             Carrito de compras
           </Link>
         </ul>
