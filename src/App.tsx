@@ -1,22 +1,29 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { MainLayout } from "./components/Layout";
+
+export type Routes = "/" | "/calendario" | "/carrito";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Recetas</div>,
-  },
-  {
-    path: "calendario",
-    element: <div>Calendario</div>,
-  },
-  {
-    path: "carrito",
-    element: <div>Carrito</div>,
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: <div>Recetas</div>,
+      },
+      {
+        path: "calendario",
+        element: <div>Calendario</div>,
+      },
+      {
+        path: "carrito",
+        element: <div>Carrito</div>,
+      },
+    ],
   },
 ]);
 
-function App() {
+export function App() {
   return <RouterProvider router={router} />;
 }
-
-export default App;
