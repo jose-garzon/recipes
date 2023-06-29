@@ -1,6 +1,6 @@
-import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-const App = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <div>Recetas</div>,
@@ -14,5 +14,9 @@ const App = createBrowserRouter([
     element: <div>Carrito</div>,
   },
 ]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
 
 export default App;
