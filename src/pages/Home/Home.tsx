@@ -1,3 +1,21 @@
+import { Typography } from "../../components/Typography";
+
 export function Home() {
-  return <h1>Recetas</h1>;
+  return (
+    <>
+      <Typography component="h1">
+        Encuentra y Planifica las Recetas de tu Semana
+      </Typography>
+      <section>
+        <Typography component="h2" color="text" size="md">
+          Categorias
+        </Typography>
+      </section>
+      <section>
+        <Typography component="h2" color="text" size="md">
+          Recetas
+        </Typography>
+      </section>
+    </>
+  );
 }
