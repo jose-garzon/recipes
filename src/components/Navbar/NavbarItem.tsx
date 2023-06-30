@@ -22,7 +22,7 @@ export function NavbarItem(props: NavbarItemProps) {
   return (
     <NavLink className={({ isActive }) => getSyles(isActive)} to={to}>
       <Icon type={icon} size={24} />
-      <span className="hidden sm:block">{children}</span>
+      <span className="hidden md:block">{children}</span>
     </NavLink>
   );
 }

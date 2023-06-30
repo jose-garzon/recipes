@@ -3,7 +3,7 @@ import { Navbar } from "../Navbar";
 
 export function MainLayout() {
   return (
-    <div className="grid  min-h-screen grid-cols-[minmax(64px,_20%)_1fr]">
+    <div className="grid  min-h-screen grid-cols-[64px_1fr] md:grid-cols-[240px_1fr]">
       <aside>
         <Navbar />
       </aside>
