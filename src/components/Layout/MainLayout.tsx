@@ -3,11 +3,11 @@ import { Navbar } from "../Navbar";
 
 export function MainLayout() {
   return (
-    <div className="grid grid-cols-12 min-h-screen">
-      <aside className="col-span-3">
+    <div className="grid  min-h-screen grid-cols-[minmax(64px,_20%)_1fr]">
+      <aside>
         <Navbar />
       </aside>
-      <main className="col-span-9">
+      <main className="p-8">
         <Outlet />
       </main>
     </div>
