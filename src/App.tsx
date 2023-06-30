@@ -1,5 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { MainLayout } from "./components/Layout";
+import { Home } from "./pages/Home";
+import { Calendar } from "./pages/Calendar";
+import { Cart } from "./pages/Cart";
 
 export type Routes = "/" | "/calendario" | "/carrito";
 
@@ -10,15 +13,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <div>Recetas</div>,
+        element: <Home />,
       },
       {
         path: "calendario",
-        element: <div>Calendario</div>,
+        element: <Calendar />,
       },
       {
         path: "carrito",
-        element: <div>Carrito</div>,
+        element: <Cart />,
       },
     ],
   },
