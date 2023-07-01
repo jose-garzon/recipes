@@ -1,6 +1,4 @@
-import { HTMLAttributes, ReactNode } from "react";
-
-type ClassName = HTMLAttributes<HTMLHeadingElement>["className"];
+import { ReactNode } from "react";
 
 type Component = "h1" | "h2" | "h3" | "p" | "small";
 type Size = "xl" | "lg" | "md" | "sm" | "xs";
