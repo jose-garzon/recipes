@@ -3,6 +3,7 @@ import { RecipeCard } from "../../components/RecipeCard";
 import { Typography } from "../../components/Typography";
 
 import defaultImage from "../../assets/img/recipe-default.jpg";
+import { Input } from "../../components/Input";
 
 export function Home() {
   return (
@@ -19,6 +20,7 @@ export function Home() {
           <ButtonPill variant="filled">Vegetariano</ButtonPill>
         </div>
       </section>
+      <Input label="Search" icon="search" className="w-full lg:w-1/2" />
       <section className="my-4 md:my-6">
         <Typography component="h2" color="text" size="md">
           Recetas
