@@ -20,11 +20,10 @@ const sizeByComponent: { [key in Component]: Size } = {
   p: "sm",
   small: "xs",
 };
-
 const sizeClassnames: { [key in Size]: ClassName } = {
-  xl: "text-5xl",
+  xl: "text-2xl md:text-5xl",
   lg: "text-3xl",
-  md: "text-2xl",
+  md: "text-xl md:text-2xl",
   sm: "text-base",
   xs: "text-sm",
 };
