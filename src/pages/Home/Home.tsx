@@ -23,7 +23,7 @@ export function Home() {
         <Typography component="h2" color="text" size="md">
           Recetas
         </Typography>
-        <div className="mt-2 md:mt-4 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="mt-2 md:mt-4 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
           <RecipeCard
             image={defaultImage}
             name="Pollo frito"
