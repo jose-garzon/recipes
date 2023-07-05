@@ -2,7 +2,7 @@ import { HTMLAttributes } from "react";
 import { Icon, IconProps } from "../Icon";
 
 export interface InputProps extends HTMLAttributes<HTMLInputElement> {
-  label: string;
+  label?: string;
   icon: IconProps["type"];
   className?: ClassName;
 }

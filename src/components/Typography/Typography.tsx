@@ -11,6 +11,7 @@ export interface TypographyProps {
   size?: Size;
   color?: Colors;
   weight?: Weight;
+  className?: ClassName;
 }
 
 const sizeByComponent: { [key in Component]: Size } = {
@@ -48,6 +49,7 @@ export function Typography(props: TypographyProps) {
     component,
     size,
     color,
+    className,
     weight = "normal",
     ...rest
   } = props;
@@ -60,7 +62,7 @@ export function Typography(props: TypographyProps) {
   const weightStyles = weightClassnames[weightColor];
   const tagProps = {
     ...rest,
-    className: `${sizeStyles} ${colorsStyles} ${weightStyles}`,
+    className: `${sizeStyles} ${colorsStyles} ${weightStyles} ${className}`,
   };
 
   if (component === "h1") return <h1 {...tagProps}>{children}</h1>;
